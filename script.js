@@ -2,6 +2,8 @@ const container = document.querySelector(".container")
 
 const header = document.getElementsByTagName("header");
 
+const closeIconMenuMobile = document.querySelector("#icon-close-menu-mobile");
+
 async function scrollAnimation(){
 
     const pages = document.querySelectorAll("[data-page]");
@@ -50,4 +52,8 @@ header[0].addEventListener("mouseover", () => {
 
 header[0].addEventListener("mouseout", () => {
     header[0].classList.remove("show-nav")
+})
+
+closeIconMenuMobile.addEventListener("click", () => {
+    document.querySelector("#menu-mobile-div").style = "display: none";
 })
