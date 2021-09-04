@@ -83,6 +83,8 @@ header > nav > ul> li> a{
     padding-top: 20vh;
 
     z-index: 1;
+
+    display: none;
 }
 
 #icon-close-menu-mobile{

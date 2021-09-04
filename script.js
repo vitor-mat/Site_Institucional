@@ -4,6 +4,8 @@ const header = document.getElementsByTagName("header");
 
 const closeIconMenuMobile = document.querySelector("#icon-close-menu-mobile");
 
+const iconMenuHamburg = document.querySelector("#hanburg-menu-svg");
+
 async function scrollAnimation(){
 
     const pages = document.querySelectorAll("[data-page]");
@@ -56,4 +58,8 @@ header[0].addEventListener("mouseout", () => {
 
 closeIconMenuMobile.addEventListener("click", () => {
     document.querySelector("#menu-mobile-div").style = "display: none";
+})
+
+iconMenuHamburg.addEventListener("click", () => {
+    document.querySelector("#menu-mobile-div").style = "display: block";
 })
