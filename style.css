@@ -117,3 +117,15 @@ section > span{
 .show-nav{
     top: 0px;
 }
+
+@media(max-width: 768px){
+    section > span{
+        font-size: 80px;
+    }
+}
+
+@media(max-width: 425px){
+    section > span{
+        font-size: 48px;
+    }
+}
