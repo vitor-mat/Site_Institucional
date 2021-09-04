@@ -13,6 +13,11 @@
     height: 100vh;
 
     overflow-y: scroll;
+
+    scroll-snap-type: y mandatory;
+
+    scroll-behavior: smooth;
+
 }
 
 section{
@@ -22,6 +27,9 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    scroll-snap-align: start;
+
 }
 
 section > span{
