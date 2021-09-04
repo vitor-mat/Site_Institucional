@@ -124,8 +124,22 @@ section > span{
     }
 }
 
+
+#hanburg-menu-svg{
+    display: none;
+}
+
 @media(max-width: 425px){
     section > span{
         font-size: 48px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #hanburg-menu-svg{
+        display: inline-block;
+        cursor: pointer
     }
 }
