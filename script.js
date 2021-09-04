@@ -1,8 +1,8 @@
 const container = document.querySelector(".container")
 
-const pageCount = 0;
+let z = 0;
 
-function scrollAnimation(){
+async function scrollAnimation(){
 
     const pages = document.querySelectorAll("[data-page]");
 
@@ -19,16 +19,16 @@ function scrollAnimation(){
     })
     */
 
-    console.log(container.scrollTop)
-    console.log(window.innerHeight)
+    console.log(z)
 
-    if(container.scrollTop == 0){
-        pages[0].classList.add("anima-center")
+
+    if(container.scrollTop == 0*window.innerHeight){
+        pages[z].classList.add("anima-center")
     }else{
-        pages[0].classList.remove("anima-center")
+        pages[z].classList.remove("anima-center")
     }
 
-    if(container.scrollTop == window.innerHeight){
+    if(container.scrollTop == 1*window.innerHeight){
         pages[1].classList.add("anima-center")
     }else{
         pages[1].classList.remove("anima-center")
@@ -56,4 +56,6 @@ function scrollAnimation(){
 
 scrollAnimation()
 
-container.addEventListener("scroll", scrollAnimation)
+container.addEventListener("scroll", () => {
+    setTimeout(scrollAnimation, 400)
+})
