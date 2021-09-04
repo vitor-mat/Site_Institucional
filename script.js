@@ -6,22 +6,6 @@ async function scrollAnimation(){
 
     const pages = document.querySelectorAll("[data-page]");
 
-    const viewHeight = container.scrollTop + window.innerHeight
-
-    /*
-    pages.forEach((e) => {
-
-        if(viewHeight > e.offsetTop){
-            e.classList.add("anima-center")
-        }else{
-            e.classList.remove("anima-center")
-        }
-    })
-    */
-
-    console.log(z)
-
-
     if(container.scrollTop == 0*window.innerHeight){
         pages[z].classList.add("anima-center")
     }else{

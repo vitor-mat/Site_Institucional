@@ -18,6 +18,12 @@
 
     scroll-behavior: smooth;
 
+    position: relative;
+
+}
+
+header{
+    position: absolute;
 }
 
 section{
