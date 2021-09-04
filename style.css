@@ -85,14 +85,22 @@ header > nav > ul> li> a{
     z-index: 1;
 }
 
+#icon-close-menu-mobile{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
 #menu-mobile-div > ul> li{
     text-align: center;
+    cursor: pointer;
 }
 
 #menu-mobile-div > ul> li> a{
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
 }
 
 section{
