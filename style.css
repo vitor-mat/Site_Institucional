@@ -37,6 +37,12 @@ section > span{
     color: white;
     font-weight: 700;
     text-transform: uppercase;
+
+    opacity: 0;
+    transform: translatey(-100px);
+
+    
+    transition: 1s;
 }
 
 .page1{
@@ -57,4 +63,9 @@ section > span{
 
 .page5{
     background: black;
+}
+
+.anima-center{
+    opacity: 1;
+    transform: translateY(0px);
 }
