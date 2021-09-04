@@ -1,15 +1,15 @@
 const container = document.querySelector(".container")
 
-let z = 0;
+const header = document.getElementsByTagName("header");
 
 async function scrollAnimation(){
 
     const pages = document.querySelectorAll("[data-page]");
 
     if(container.scrollTop == 0*window.innerHeight){
-        pages[z].classList.add("anima-center")
+        pages[0].classList.add("anima-center")
     }else{
-        pages[z].classList.remove("anima-center")
+        pages[0].classList.remove("anima-center")
     }
 
     if(container.scrollTop == 1*window.innerHeight){
@@ -42,4 +42,10 @@ scrollAnimation()
 
 container.addEventListener("scroll", () => {
     setTimeout(scrollAnimation, 400)
+})
+
+console.log(header[0])
+
+header[0].addEventListener("mouseover", () => {
+    alert("entrei")
 })
