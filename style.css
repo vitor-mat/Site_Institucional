@@ -65,6 +65,36 @@ header > nav > ul> li> a{
     text-decoration: none;
 }
 
+#hanburg-menu-svg{
+    display: none;
+}
+
+#menu-mobile-div{
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+
+    background: rgba(0, 0, 0, .85);
+
+    display: flex;
+    justify-content: center;
+    
+    padding-top: 20vh;
+
+    z-index: 1;
+}
+
+#menu-mobile-div > ul> li{
+    text-align: center;
+}
+
+#menu-mobile-div > ul> li> a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 section{
     width: 100%;
     height: 100%;
@@ -75,6 +105,7 @@ section{
 
     scroll-snap-align: start;
 
+    z-index: 0;
 }
 
 section > span{
@@ -122,11 +153,6 @@ section > span{
     section > span{
         font-size: 80px;
     }
-}
-
-
-#hanburg-menu-svg{
-    display: none;
 }
 
 @media(max-width: 425px){
