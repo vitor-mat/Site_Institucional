@@ -31,18 +31,13 @@ body{
 header{
     width: 100%;
 
-    height: 50vh;
+    height: 40vh;
 
     position: absolute;
 
     top: -50px;
 
-    transition: 50px;
-
-    opacity: 0;
-
-    cursor: pointer;
-
+    transition: .5s;
 }
 
 header > nav {
@@ -91,8 +86,7 @@ section > span{
     opacity: 0;
     transform: translatey(-100px);
 
-    
-    transition: 1.7s;
+    transition: 1.5s;
 }
 
 .page1{
@@ -121,6 +115,5 @@ section > span{
 }
 
 .show-nav{
-    position: absolute;
-    top: 50px;
+    top: 0px;
 }

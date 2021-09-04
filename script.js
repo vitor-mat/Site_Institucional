@@ -44,8 +44,10 @@ container.addEventListener("scroll", () => {
     setTimeout(scrollAnimation, 400)
 })
 
-console.log(header[0])
-
 header[0].addEventListener("mouseover", () => {
-    alert("entrei")
+    header[0].classList.add("show-nav")
+})
+
+header[0].addEventListener("mouseout", () => {
+    header[0].classList.remove("show-nav")
 })
