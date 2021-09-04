@@ -63,3 +63,15 @@ closeIconMenuMobile.addEventListener("click", () => {
 iconMenuHamburg.addEventListener("click", () => {
     document.querySelector("#menu-mobile-div").style = "display: block";
 })
+
+function addEventForLinkMenuMobile(){
+    const linkMenuMobile = document.querySelectorAll(".link-menu-mobile");
+
+    linkMenuMobile.forEach((e) => {
+        e.addEventListener("click", () => {
+            document.querySelector("#menu-mobile-div").style = "display: none";
+        })
+    })
+}
+
+addEventForLinkMenuMobile()
